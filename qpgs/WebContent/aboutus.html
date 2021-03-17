@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	background-image:url("https://images.pexels.com/photos/2978800/pexels-photo-2978800.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+}
+.signup{  
+        width: 500px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 50px;  
+        background: #262626;  
+        border-radius: 15px ;  
+} 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#262626;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:#737373;
+}
+
+.active {
+  background-color:#737373;
+}  
+</style>
+</head>
+<body>
+	 <ul>
+  <li><a href="ep1.html">Home</a></li>
+  <li><a href="contactep.html">Contact</a></li>
+  <li><a href="#aboutus.html">About</a></li>
+</ul>
+<h1 style="background-color:#cccccc">Question Paper Generator</h1>
+<div class="signup" style="color:white">
+In this system we present a smart question paper generating system for universities. It is made to allow universities to generate question papers with random but even questions to cover most chapters of subject with difficulty level within seconds and mail them to colleges instantly.  In our system we allow administrator to input a set of questions and respective answers for option ticking. We also allow admin to provide weight age and complexity for each of these questions. After this the questions are stored in database along with their weight age. Now on question paper generating time the admin just has to select the percentage of difficulty. On this selection the system selects questions randomly in a way that their weightage makes up for 100 marks and according to difficulty that admin chooses the questions are chosen based on their complexity level. The questions are also added for various difficulty levels so that as soon admin chooses the type of paper difficulty (Easy, medium, difficult) the system automatically generates paper, prepares doc file as per selected paper format. Also emails it to other colleges. After this q paper is converted to pdf file and emailed to colleges on button click.
+</div>
+<h1 style="background-color:#cccccc">Its Features:</h1>
+<div class="signup" style="color:white">
+ <p>•Admin Login: Admin would be having a login account. He can add questions in the system and their respective answers. The answers are stored as a base for reference for AI to use while checking answers.</p>
+  <p>•	Question Insertion: User may insert questions as per weight age, difficulty, subject and chapter in the system.</p>
+  <p>•	Difficulty Choosing: User may then choose the paper difficulty level
+•	Random Paper generation: The system now automatically chooses random questions as per the selected difficulty level.</p>
+•	Wide Chapter Coverage: The system tries to cover as many chapters as possible for that subject.
+•	Doc File Creation: The system now exports the well formatted question paper in a doc file.
+•	Emailing: The file is now emailed to various users ie college/exam centers just minutes before the exam
+</div>
+</div>
+</body>
+</html>

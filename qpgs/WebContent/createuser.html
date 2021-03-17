@@ -1,0 +1,119 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Register Form</title>    
+    <style type="text/css">
+body
+{  
+    margin: 0;  
+    padding: 0;  
+   background-image:url("https://images.pexels.com/photos/2978800/pexels-photo-2978800.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    font-family: 'Arial';  
+}  
+.login{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: #000000;  
+        border-radius: 15px ;  
+}  
+h2{  
+    text-align: center;  
+    color: #000000;  
+    padding:10px;  
+}  
+label{  
+    color: white;  
+    font-size: 20px;  
+}  
+#uname{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#pass{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;   
+}  
+#log{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: blue;  
+}  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#000000;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:#737373;
+}
+
+.active {
+  background-color:#737373;
+}
+</style>  
+<script type="text/javascript">
+      function validate(){
+        var un=document.getElementById('uname').value;
+         
+         var pw=document.getElementById('pass').value;
+         
+         if(un.length <6){
+         alert('lenth should be min of 6');
+         document.getElementById('uname').focus();       
+         return false;
+         }
+         if(pw.length <8){
+           alert('pawwsord should be 8 characters');
+         document.getElementById('pword').focus();       
+         return false;       
+        }
+        return true;
+      }
+    </script>
+</head>    
+<body>    
+    <ul>
+  <li><a href="ep1.html">Home</a></li>
+  <li><a href="contactep.html">Contact</a></li>
+  <li><a href="aboutus.html">About</a></li>
+</ul>
+    <h2 style="background-color:#cccccc">Register Here</h2>
+    <form method="post"  onsubmit="return validate()" action="CreateUserServlet">
+    <div class="login">
+     <label>Username:<input type="text" name="uname" id="uname" value="" required="required"/></label>
+     <br/>
+     <label>Password:<input type="password" name="pass" id="pass" value="" required="required"/></label>
+     </br>
+     <input type="submit" value="Create"/>
+     <br><br>
+ </div>
+ </form>
+</body>    
+</html>  

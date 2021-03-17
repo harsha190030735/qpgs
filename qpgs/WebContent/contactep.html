@@ -1,0 +1,141 @@
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <style type="text/css">
+body
+{  
+    margin: 0;  
+    padding: 0;  
+   background-image:url("https://images.pexels.com/photos/2978800/pexels-photo-2978800.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    font-family: 'Arial';  
+}
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 10px;
+  padding: 0 5px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.container {
+  padding: 0px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 0px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+}
+
+.button:hover {
+  background-color: #555;
+}  
+.login{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 50px;  
+        background: #262626;  
+        border-radius: 15px ;  
+}  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#262626;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:#737373;
+}
+
+.active {
+  background-color:#737373;
+}  
+</style>
+</head>
+<body>
+	<ul>
+  <li><a href="ep1.html">Home</a></li>
+  <li><a href="contactep.html">Contact</a></li>
+  <li><a href="aboutus.html">About</a></li>
+</ul>
+		<div class="login" style="color:white">
+					<h1>Contact Us</h1>
+					<h3><p> D-5, Main Road Sector-10 benz-circle,vijayawada-521333  </p></h3>
+					<h3><p> Email: - support@team.in</p></h3>
+					<h3><p> Phone: - 6300835927</p></h3>
+		</div> 
+		<div class="login" style="color:white">  
+					<h1>Get in Touch</h1>
+					<h3><p>Feel free to drop us a line below!</p></h3>
+					<textarea rows="3" placeholder="Name" name="message" required></textarea>
+					<textarea rows="3" placeholder="Email" name="Email" required></textarea>
+					<textarea rows="3" placeholder="Number" name="number" required></textarea>
+					<textarea rows="5" placeholder="Message" name="message" required></textarea>
+					<button type="button" name="submit" id="submit">Send</button>
+	</div>
+	<br>
+	<div class="column" style="background-color:#bfbfbf">
+    <div class="card">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/714swT4LGEL._UL1500_.jpg" style="width:50%">
+      <div class="container">
+        <h2>AJAY ADABALA</h2>
+        <p>ajay@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column" style="background-color:#bfbfbf">
+    <div class="card">
+      <img src="https://image.spreadshirtmedia.com/image-server/v1/compositions/T444A648PA3435PT17X20Y17D1028321990FS6720/views/1,width=500,height=500,appearanceId=648/harsha-womens-premium-hoodie.jpg" style="width:50%">
+      <div class="container">
+        <h2>HARSHA VARDHAN</h2>
+        <p>harsha@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column" style="background-color:#bfbfbf">
+    <div class="card">
+      <img src="https://media.howtopronounce.com/ogimg/0b76df3cd45d11cfbc13082c6ae5dc69.png" style="width:50%">
+      <div class="container">
+        <h2>TRINADH</h2>
+        <p>trinadh@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
